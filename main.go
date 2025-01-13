@@ -17,6 +17,10 @@ import (
 	_ "github.com/tursodatabase/libsql-client-go/libsql"
 )
 
+func unused(a,b int) int {
+	return a + b
+}
+
 type apiConfig struct {
 	DB *database.Queries
 }
