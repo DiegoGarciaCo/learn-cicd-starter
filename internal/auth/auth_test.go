@@ -44,7 +44,7 @@ func TestGetAPIKey(t *testing.T) {
 			}
 
 			// Check if the API key matches the expected value
-			if apiKey == tt.expectedAPIKey {
+			if apiKey != tt.expectedAPIKey {
 				t.Errorf("expected API key: %s, got: %s", tt.expectedAPIKey, apiKey)
 			}
 		})
